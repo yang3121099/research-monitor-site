@@ -1,42 +1,7 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="referrer" content="no-referrer">
-  <meta name="robots" content="noindex, nofollow, noarchive">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; object-src 'none'; form-action 'none'; script-src 'self' 'sha256-jXOh333VVN2w4Wgn8mSuv04y92vrqgIJlJX9hYR/FTo='; script-src-attr 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com data:; connect-src 'self' https://huggingface.co https://*.huggingface.co https://hf.co https://*.hf.co; img-src 'self' data: https://huggingface.co https://*.huggingface.co; frame-src 'self' blob:; worker-src 'none'; manifest-src 'none'">
-  <title>研究监控 · 加密访问</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="./unlock.js" defer></script>
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex,nofollow,noarchive"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; object-src 'none'; form-action 'none'; script-src 'self' 'sha256-jXOh333VVN2w4Wgn8mSuv04y92vrqgIJlJX9hYR/FTo='; script-src-attr 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com data:; connect-src 'self' https://huggingface.co https://*.huggingface.co https://hf.co https://*.hf.co; img-src 'self' data: https://huggingface.co https://*.huggingface.co; frame-src 'self' blob:; worker-src 'none'; manifest-src 'none'"><title>研究监控 · 浏览器授权</title><link rel="stylesheet" href="./device-style.css"><script type="module" src="./device-unlock.js"></script></head>
 <body>
-  <main id="gate" class="gate">
-    <section class="access-card" aria-labelledby="access-title">
-      <div class="brand-mark" aria-hidden="true">◈</div>
-      <p class="eyebrow">RESEARCH MONITOR</p>
-      <h1 id="access-title">研究进展，安全查阅。</h1>
-      <p class="intro">输入访问密码，在当前浏览器中解密监控页面。</p>
-      <form id="unlock-form" autocomplete="off">
-        <label for="password">访问密码</label>
-        <div class="password-field">
-          <input id="password" name="password" type="password" required maxlength="256" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="请输入访问密码" aria-describedby="status" autofocus>
-          <button id="show-password" class="reveal" type="button" aria-label="显示密码" aria-pressed="false">显示</button>
-        </div>
-        <button id="unlock-button" class="primary" type="submit"><span>解锁页面</span><span aria-hidden="true">↗</span></button>
-        <p id="status" class="status" aria-live="polite" role="status"></p>
-      </form>
-      <div class="privacy-note">
-        <span class="privacy-dot" aria-hidden="true"></span>
-        <p>密码不会上传，也不会保存在浏览器中。刷新或锁定后，需要重新输入。</p>
-      </div>
-      <p class="method-note">此页面采用浏览器端加密，不是服务器账户登录或设备身份认证。</p>
-    </section>
-    <footer class="gate-footer">PRIVATE WORKSPACE <span>·</span> AES-256-GCM</footer>
-  </main>
-  <section id="workspace" class="workspace" hidden aria-label="已解密的研究监控">
-    <header class="workspace-bar"><span><i aria-hidden="true"></i>研究监控 <small>当前会话已解锁</small></span><button id="lock-button" type="button">锁定并退出</button></header>
-    <iframe id="dashboard" title="研究监控内容" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe>
-  </section>
-</body>
-</html>
+<main id="gate" class="gate"><section class="access-card" aria-labelledby="title"><div class="brand-mark" aria-hidden="true">◈</div><p class="eyebrow">RESEARCH MONITOR · DEVICE ACCESS</p><h1 id="title">仅限已授权的浏览器</h1><p class="intro">此页使用本浏览器保存的凭证自动解密，无需反复输入密码。</p><p id="status" class="status" role="status" aria-live="polite">正在检查本浏览器的授权…</p><button id="retry-button" class="primary" type="button" hidden>重新检查授权</button><p id="key-identity" class="device-meta"></p><div class="privacy-note"><p>私钥只保存在此浏览器的本站存储中且不可导出。其他浏览器、隐私窗口或清除站点数据后都需要重新授权。这是浏览器凭证授权，不是硬件身份识别。</p></div><p class="method-note"><a href="./enroll.html">登记此浏览器</a> · 登记后仍需管理员批准</p></section></main>
+<section id="workspace" class="workspace" hidden aria-label="已解密的研究监控"><header class="workspace-bar"><span><i aria-hidden="true"></i>研究监控 <small>已授权浏览器</small></span><button id="lock-button" type="button">锁定本次页面</button></header><iframe id="dashboard" title="研究监控内容" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe></section>
+</body></html>
