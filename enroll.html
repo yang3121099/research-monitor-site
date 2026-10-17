@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="referrer" content="no-referrer"><meta name="robots" content="noindex,nofollow,noarchive">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; base-uri 'none'; object-src 'none'; form-action 'none'; frame-src 'none'">
+<title>登记此浏览器 · 研究监控</title><link rel="stylesheet" href="./device-style.css"><script type="module" src="./device-enroll.js"></script>
+</head>
+<body><main class="gate"><section class="access-card enrollment" aria-labelledby="title"><p class="eyebrow">RESEARCH MONITOR · DEVICE ACCESS</p><h1 id="title">登记此浏览器</h1><p class="intro">点击下方按钮，在这个浏览器中创建设备凭证。私钥保存在本站的浏览器存储中，且不可导出。</p><button id="enroll-button" class="primary" type="button">在此浏览器创建凭证</button><p id="status" class="status" role="status" aria-live="polite">请在希望长期使用的默认 Chrome 中打开此页，并亲自点击登记。</p><section id="public-section" hidden><label for="public-enrollment">待管理员登记的公钥信息（不含私钥）</label><textarea id="public-enrollment" readonly rows="13" spellcheck="false" aria-describedby="public-help"></textarea><p id="public-help" class="method-note">提供这段公钥信息后，管理员还需将它加入允许名单并重新发布。生成凭证本身不会获得监控访问权。</p></section><div class="privacy-note"><p>授权对象是此浏览器的本站存储，不是硬件身份鉴定。清除站点数据、更换浏览器配置或使用隐私窗口，会失去现有凭证并需要重新授权。同一 GitHub Pages 所有者下的网站共享 origin；该所有者可发布的脚本必须保持可信。</p></div><p class="method-note"><a href="./">返回监控入口</a></p></section></main></body></html>
