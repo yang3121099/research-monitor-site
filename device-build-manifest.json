@@ -1,7 +1,7 @@
 {
   "kind": "explicit-device-allowlist",
   "version": "private-monitor-device-envelope-v1",
-  "built_at": "2026-10-21T10:05:59.040Z",
+  "built_at": "2026-10-21T11:45:44.857Z",
   "files": [
     {
       "name": ".nojekyll",
@@ -20,8 +20,8 @@
     },
     {
       "name": "device-payload.json",
-      "bytes": 102899,
-      "sha256": "693dcbc32897d444f2e4b1584fa43b52c6f62cf1482c0117b6909ca5f5eeb1f8"
+      "bytes": 104023,
+      "sha256": "dc0e0244f3091cfd0b7a1d4a9068db315040023641b93dc48a1a689a15af32c5"
     },
     {
       "name": "device-protocol.js",
@@ -46,7 +46,7 @@
     {
       "name": "index.html",
       "bytes": 2372,
-      "sha256": "fa31fa73fa612f5fbc3519eb2f5dc1e235aa0f392e2ba14126eb0eb052e0e701"
+      "sha256": "991f1b7eb22522fe7fdec6be5467698d44d39246b55a960487eac001c62920df"
     },
     {
       "name": "robots.txt",
